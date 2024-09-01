@@ -17,6 +17,7 @@ body {
 :root {
   --base-color-scale-gray-9: #0d1117;
   --borderWidth-thin: max(1px, 0.0625rem);
+  --tw-bg-opacity: 1;
 }
 a {
   text-decoration: none;
@@ -277,7 +278,7 @@ video {
   }
 }
 .news {
-  min-height: 100vh;
+  padding-bottom: 70px;
   background: url("../images/newBack\ \(2\).jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -341,9 +342,97 @@ video {
   line-height: 1.5rem;
   color: #454545;
 }
+/* .contact {
+  margin: 50px auto 50px;
+  position: relative;
+  color: #fff;
+}
 
+.contact .row .address-content {
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1em;
+}
+
+.adA,
+.adB,
+.adC {
+  padding-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.adA-description,
+.adB-description,
+.adC-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .row .contact-form {
+  padding: 20px 30px 0 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.contact .row .contact-form .send button {
+  border-radius: 1em;
+  background: #0a1e2d;
+} */
+
+.last-top-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.last-top-container .last-left button {
+  cursor: pointer;
+  border: none;
+  padding: 0.25rem 1.25rem;
+  background-color: rgb(237 240 242 / 1) !important;
+  border-radius: 9999px;
+  min-height: 2.5rem;
+}
+.last-right ul {
+  display: flex;
+  align-items: center;
+}
+.last-right ul li a {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: var(--borderWidth-thin) solid transparent;
+  box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.661);
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 15px 15px 0;
+  padding-left: 8px;
+}
+
+.last-right ul li a:hover {
+  background: #fea116;
+  color: #081b29;
+  box-shadow: 0 0 20px #0ef;
+}
 footer {
   background: #000000d9;
+  background-color: rgb(84 97 108 / var(--tw-bg-opacity));
 }
 i {
   margin-right: 10px;
@@ -354,17 +443,17 @@ i {
   font-family: "Cute Font", sans-serif;
 }
 .fotrprag {
-  color: rgba(255, 255, 255, 0.616);
+  color: rgba(255, 255, 255, 1);
   font-size: 15px;
   font-weight: 400;
-  font-family: "soure sans pro", Arial, sans-serif;
 }
 
 .link {
   color: #999;
+  color: #fff;
   line-height: 30px;
   cursor: pointer;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 }
