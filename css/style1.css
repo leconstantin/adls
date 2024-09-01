@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -206,7 +207,7 @@ header {
 .overview {
   padding: 20px;
   background-color: #f8f9fa; /* Light background color */
-  min-height: 100vh;
+  min-height: calc(100vh + 50px);
 }
 /* Overview Header */
 .overview-head {
@@ -217,9 +218,8 @@ header {
 
 .head h2 {
   font-family: "Cute Font", sans-serif;
-  color: #686868;
-  font-size: 25px;
-  color: rgba(0, 0, 0, 0.802);
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.963);
   position: relative;
 }
 
@@ -229,7 +229,7 @@ header {
   display: block; /* Ensures the pseudo-element is a block-level element */
   width: 50%; /* Full width of the parent element */
   height: 2px; /* Adjust height of the border */
-  background: linear-gradient(to right, red, blue, yellow);
+  background: linear-gradient(to right, #5c5353, #1b1b21, rgb(39, 39, 35));
   position: absolute; /* Positioning relative to .overview-head */
   bottom: 0; /* Aligns the border at the bottom */
   left: 50%; /* Aligns the border at the left edge */
