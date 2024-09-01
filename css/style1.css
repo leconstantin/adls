@@ -186,6 +186,12 @@ header {
 .numbers {
   background: #0f78e1;
   min-height: 100px;
+  background: url("../images/StockCake-Organized\ File\ Folders_1725210220.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.645); /* Black color with 50% opacity */
+  background-blend-mode: overlay;
 }
 .num-container {
   padding: 40px 0 40px;
@@ -200,7 +206,7 @@ header {
 }
 .numcol .name {
   font-weight: 500;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 /* General Styles */
 
