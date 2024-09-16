@@ -7,9 +7,25 @@ window.addEventListener('load', () => {
 
     setTimeout(() => {
     spinnerWrapperEl.style.display = 'none';
-    }, 2000);
+    }, 1000);
 });
-   
+// TODO: questions
+
+const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () =>{
+        faq.classList.toggle('open');
+    })
+})
+// active navlinks
+const link = document.querySelector('.nav-link');
+link.addEventListener('click', () => {
+    link.classList.toggle('active');
+    
+})
+
+
 
 
 

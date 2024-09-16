@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1b1b1b;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+}
+:root {
+  --base-color-scale-gray-9: #0d1117;
+  --borderWidth-thin: max(1px, 0.0625rem);
+  --tw-bg-opacity: 1;
+  --colr-primary: #6c63ff;
+  --colr-success: #00bf8e;
+  --colr-warning: #f7c94b;
+  --colr-danger: #f75842;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.home h1,
+.home h2,
+.home h3,
+.home h4,
+.home h5,
+.home h6 {
+  color: #30394d;
+}
+
+.m10 {
+  padding-top: 6rem;
+  padding-bottom: 6.25rem;
+}
+.m5 {
+  padding-top: 4rem;
+  padding-bottom: 6.25rem;
+}
+.home-section__heading {
+  font-size: 38px;
+  font-size: 2rem;
+  line-height: 1.16666667;
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
+  text-transform: uppercase;
+}
+.ttn {
+  text-transform: none;
+}
+header {
+  background-color: #e7faef;
+  animation: backk 10s ease-in-out infinite;
+}
+@keyframes backk {
+  50% {
+    background: url("../images/a\ \(2\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.604
+    ); /* Black color with 50% opacity */
+    background-blend-mode: overlay;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+
+.navbar .nav-left .site-brand img {
+  height: 45px;
+  width: 39px;
+  opacity: 1;
+}
+
+.navbar .nav-left .site-brand .logo {
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+.logo a {
+  font-weight: 300;
+  font-size: 20px;
+}
+.inblue {
+  font-size: 20px;
+  color: rgb(11, 182, 250);
+}
+
+.navbar .nav-right .navbar-nav li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 8px 15px 10px 15px;
+  cursor: pointer;
+  border-radius: 1020px;
+  transition: 0.5s;
+}
+
+.navbar .nav-right .navbar-nav li a:hover,
+.active {
+  color: black;
+  background: white;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.437);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.398);
+}
+
+.lc {
+  font-family: "Cute Font", sans-serif;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.291);
+    backdrop-filter: blur(10px);
+  }
+
+  .esc {
+    font-size: 1.9rem;
+  }
+}
+
+/* .nav-item a {
+  padding: 15px 10px;
+  transition: 0.5s;
+}
+
+.nav-item a:hover {
+  color: rgba(46, 46, 229, 0.614);
+  border-bottom: 1.4px solid #264b8fb6;
+  transition: 0.25s;
+} */
+
+.nav-link,
+.about {
+  font-size: 17.5px;
+}
+
+.nav-button {
+  border: none;
+}
+
+.spinner-wrapper {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200s;
+}
+
+.spinner-grow {
+  height: 70px;
+  width: 70px;
+}
+.hero-desc {
+  padding-bottom: 7em;
+}
+.hero-subtitle h6 {
+  color: blue;
+  font-size: 14px;
+  padding-top: 2px;
+}
+.hero-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.17857143;
+  margin-bottom: 0.75rem;
+}
+.hero-para {
+  width: 40%;
+  margin: 0em 0 2.5rem;
+}
+.hero-para p {
+  font-size: 1rem;
+  color: #1b1b1b;
+}
+
+.hero-learn .apply {
+  cursor: pointer;
+  margin-right: 70px;
+  padding: 1.25rem 3rem;
+  font-size: 1rem;
+  border-radius: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #fea116;
+  color: #fff;
+}
+.more .play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(20, 181, 245);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding-left: 10px;
+}
+.numcol {
+  margin-bottom: 15px;
+}
+.numcol:nth-child(1) .num-card {
+  background: var(--colr-danger);
+}
+.numcol:nth-child(2) .num-card {
+  background: var(--colr-warning);
+}
+.numcol:nth-child(3) .num-card {
+  background: var(--colr-primary);
+}
+.num-card {
+  background-color: #f5f7fa;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: #22ab59;
+}
+/* General Styles */
+
+.overview {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+  min-height: calc(100vh + 50px);
+}
+/* Overview Header */
+.overview-head {
+  position: relative; /* Required for positioning the ::after pseudo-element */
+  padding-bottom: 5px; /* Adds space for the border */
+  margin: 40px auto 70px;
+}
+
+.head h2 {
+  font-family: "Cute Font", sans-serif;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.963);
+  position: relative;
+}
+
+/* Add border-bottom using ::after pseudo-element */
+.overview-head::after {
+  content: "";
+  display: block; /* Ensures the pseudo-element is a block-level element */
+  width: 50%; /* Full width of the parent element */
+  height: 2px; /* Adjust height of the border */
+  background: linear-gradient(to right, #5c5353, #1b1b21, rgb(39, 39, 35));
+  position: absolute; /* Positioning relative to .overview-head */
+  bottom: 0; /* Aligns the border at the bottom */
+  left: 50%; /* Aligns the border at the left edge */
+  transform: translateX(-50%);
+}
+
+.overview-content {
+  position: relative;
+  padding: 0 20px 20px;
+  transition: 0.5s;
+}
+.overview-content:hover,
+.video-container:hover {
+  border-radius: 8px;
+  color: black;
+  background: white;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.437);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.398);
+}
+
+.overview-content p {
+  position: relative;
+  z-index: 1; /* Ensure text is above background image */
+  margin: 0;
+  line-height: 2.3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+.video-container {
+  max-width: 100%; /* Responsive video container */
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .overview-head h2 {
+    font-size: 1.5rem;
+  }
+}
+.news {
+  padding-bottom: 70px;
+  background: url("../images/newBack\ \(2\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.616
+  ); /* Black color with 50% opacity */
+  background-blend-mode: overlay;
+}
+.blogs {
+  padding: 520px auto 50px !important;
+  color: #454545;
+}
+.blog-title {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-title .blog,
+.update-h {
+  font: bold;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #454545;
+}
+.blog-title .blog-seemore {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font: bold;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.blog-col a {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+  background: #fff;
+  padding: 2rem !important;
+  border-color: rgb(237 240 242 / 1) !important;
+  border-width: 3px !important;
+  border-radius: 1rem;
+  font-size: 16px;
+  min-height: 200px;
+}
+.blog-col p,
+.blog-col a {
+  font-weight: 600;
+  color: #454545;
+  font-size: 16px;
+}
+.update-text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #454545;
+}
+
+.last-top-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.last-top-container .last-left button {
+  cursor: pointer;
+  border: none;
+  padding: 0.25rem 1.25rem;
+  background-color: rgb(237 240 242 / 1) !important;
+  border-radius: 9999px;
+  min-height: 2.5rem;
+}
+.last-right ul {
+  display: flex;
+  align-items: center;
+}
+.last-right ul li a {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: var(--borderWidth-thin) solid transparent;
+  box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.661);
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 15px 15px 0;
+  padding-left: 8px;
+}
+
+.last-right ul li a:hover {
+  background: #fea116;
+  color: #081b29;
+  box-shadow: 0 0 20px #0ef;
+}
+.question-container {
+  gap: 1rem;
+  margin: auto;
+}
+.faq {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.294);
+  cursor: pointer;
+  border-radius: 6px;
+}
+.faq h4 {
+  font-size: 1.2rem;
+  line-height: 2.2;
+  padding: 5px 10px;
+}
+
+.faq p {
+  margin-top: 0.8rem;
+  display: none;
+}
+.faq.open p {
+  display: block;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  padding-left: 15px;
+}
+footer {
+  background: #000000d9;
+  background-color: rgb(84 97 108 / var(--tw-bg-opacity));
+}
+i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.hfoot {
+  font-size: 20px;
+  font-family: "Cute Font", sans-serif;
+}
+.fotrprag {
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.link {
+  color: #999;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  transition: 0.5s;
+}
+.link:hover {
+  padding-left: 10px;
+}

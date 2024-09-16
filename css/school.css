@@ -1,0 +1,56 @@
+:root {
+  --colr-primary: #6c63ff;
+  --colr-success: #00bf8e;
+  --colr-warning: #f7c94b;
+  --colr-danger: #f75842;
+  --colr-danger-variant: rbga(247, 88, 66, 0.4);
+  --colr-white: #fff;
+  --colr-light: rgba(255, 255, 255, 0.7);
+  --colr-black: #000;
+  --colr-bg: #1f2641;
+  --colr-bg1: #2e3267;
+  --colr-bg2: #424890;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sr: 94%;
+
+  --transition: all 400ms ease;
+}
+nav {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.138);
+}
+.team_container col {
+  background: rgba(0, 0, 0, 0.686);
+  color: #fff;
+}
+.team_member-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* START OF OUR TEAM */
+
+.team_member {
+  color: #fff;
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  border: 1px dashed var(--colr-black);
+  border-radius: 20px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.398);
+}
+/* .team_member:hover {
+  color: black;
+  background: white;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.437);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.398);
+} */
+.team_member-image img {
+  filter: saturate(0); /* to make our imaes blacked */
+  border-radius: 10px;
+}
+.team_member-image:hover img {
+  filter: saturate(1);
+}
